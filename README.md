@@ -1,5 +1,5 @@
 # Criando o package.json
-nppm init -y
+npm init -y
 
 # Adicionando o TypeScript no package.json
 # apenas em modo/ambiente de desenvolvimento
@@ -12,4 +12,5 @@ npx tsc (nome do arquivo)
 npm i ts-node --save-dev
 
 # Caso o console.log não funcione sem import
+
 npm i @types/node --save-dev
