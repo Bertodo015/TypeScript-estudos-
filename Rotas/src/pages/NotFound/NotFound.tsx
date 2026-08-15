@@ -1,8 +1,23 @@
+import { useNavigate } from "react-router-dom";
+import notFound from "../../assets/notfound.png";
+import "./NotFound.css";
+
 function NotFound() {
 
+  const navigate = useNavigate();
   return (
     <>
-      <span>Página não encontrada</span>
+      <div className="notfound-container">
+        <div className="notfound-content">
+          <div className="notfound-image">
+            <img src={notFound} alt="Página não encontrada" />
+          </div>
+          <h1 className="notfound-title">404</h1>
+          <h2 className="notfound-subtitle">Opps! Página não encontrada</h2>
+
+          <button onClick={() => navigate('/home')} className="notfound-btn">Voltar para Home</button>
+        </div>
+      </div>
     </>
   )
 }
